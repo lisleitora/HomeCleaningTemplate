@@ -1,4 +1,6 @@
-﻿namespace HomeCleaningTemplate
+﻿using HomeCleaningTemplate.Pages;
+
+namespace HomeCleaningTemplate
 {
     public partial class App : Application
     {
@@ -6,7 +8,7 @@
         {
             InitializeComponent();
 
-            MainPage = new AppShell();
+            MainPage = new StartPage();
         }
     }
 }

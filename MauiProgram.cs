@@ -11,6 +11,8 @@ namespace HomeCleaningTemplate
                 .UseMauiApp<App>()
                 .ConfigureFonts(fonts =>
                 {
+                    fonts.AddFont("Montserrat-Regular.ttf", "Ms");
+                    fonts.AddFont("Montserrat-Regular.ttf", "MsBold");
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
                 });

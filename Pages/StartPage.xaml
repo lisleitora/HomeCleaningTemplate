@@ -1,12 +1,84 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="HomeCleaningTemplate.Pages.StartPage"
-             Title="StartPage">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+<ContentPage
+    x:Class="HomeCleaningTemplate.Pages.StartPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="StartPage">
+    <Grid BackgroundColor="{StaticResource Primary}" RowDefinitions="20,50,.5*,.5*,80">
+        <Label
+            Grid.Row="1"
+            FontFamily="Msbold"
+            FontSize="20"
+            HorizontalOptions="Center"
+            Text="∞EnterpriseName∞"
+            TextColor="White"
+            VerticalOptions="Center" />
+
+        <VerticalStackLayout Grid.Row="2">
+            <Label
+                Margin="0,20,0,0"
+                FontFamily="Msbold"
+                FontSize="50"
+                HorizontalOptions="Center"
+                Text="Clean Home"
+                TextColor="White" />
+            <Label
+                FontFamily="MsBol"
+                FontSize="50"
+                HorizontalOptions="Center"
+                Text="Clean Life."
+                TextColor="White" />
+            <Label
+                Grid.Row="1"
+                Margin="0,18,0,0"
+                FontFamily="Msbold"
+                FontSize="20"
+                HorizontalOptions="Center"
+                Text="Book cleaners at the "
+                TextColor="White"
+                VerticalOptions="Center" />
+            <Label
+                Grid.Row="1"
+                FontFamily="Msbold"
+                FontSize="20"
+                HorizontalOptions="Center"
+                Text="comfort of your home."
+                TextColor="White"
+                VerticalOptions="Center" />
+        </VerticalStackLayout>
+        <Image
+            Grid.Row="3"
+            Aspect="AspectFill"
+            HorizontalOptions="FillAndExpand"
+            Source="cleaner1.png" />
+        <Grid Grid.Row="4">
+            <Label
+                BackgroundColor="White"
+                HeightRequest="60"
+                HorizontalOptions="End"
+                Text="preenchedor"
+                TextColor="White"
+                VerticalOptions="End" />
+            <Label
+                BackgroundColor="White"
+                HeightRequest="30"
+                HorizontalOptions="End"
+                Text="preenchedor"
+                TextColor="White"
+                VerticalOptions="End"
+                WidthRequest="200" />
+            <Button
+                BackgroundColor="White"
+                CornerRadius="62"
+                FontFamily="Msbold"
+                FontSize="18"
+                HeightRequest="60"
+                HorizontalOptions="End"
+                IsVisible="true"
+                Text="Get Started"
+                TextColor="{StaticResource Primary}"
+                VerticalOptions="End"
+                WidthRequest="200" />
+        </Grid>
+    </Grid>
 </ContentPage>
