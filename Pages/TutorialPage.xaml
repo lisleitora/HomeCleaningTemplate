@@ -1,12 +1,61 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="HomeCleaningTemplate.Pages.TutorialPage"
-             Title="TutorialPage">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+<ContentPage
+    x:Class="HomeCleaningTemplate.Pages.TutorialPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="TutorialPage">
+    <Grid RowDefinitions="*,*">
+        <Image
+            Grid.Row="0"
+            HorizontalOptions="End"
+            Source="cleaner2.png" />
+        <Grid Grid.Row="1">
+            <Border
+                Margin="0,25,0,0"
+                BackgroundColor="{StaticResource Primary}"
+                Stroke="{StaticResource Primary}"
+                StrokeShape="RoundRectangle 40,40,0,0"
+                StrokeThickness="4" />
+            <VerticalStackLayout>
+                <Label
+                    Margin="0,70,0,0"
+                    FontAttributes="Bold"
+                    FontFamily="Msbold"
+                    FontSize="39"
+                    HorizontalOptions="Center"
+                    Text="Cleaning on demand"
+                    TextColor="White" />
+                <Label
+                    Grid.Row="1"
+                    Margin="60,20"
+                    FontFamily="Msbold"
+                    FontSize="20"
+                    HorizontalOptions="Center"
+                    Text="Book an appointment in less than 60 seconds and get on the schedule as early as tomorrow."
+                    TextColor="White"
+                    VerticalOptions="Center"
+                    VerticalTextAlignment="Center" />
+            </VerticalStackLayout>
+            <Button
+                Margin="10,0,0,10"
+                BackgroundColor="{StaticResource Primary}"
+                Clicked="Button_Clicked"
+                FontFamily="Msbold"
+                FontSize="26"
+                HorizontalOptions="Start"
+                Text="Back"
+                TextColor="White"
+                VerticalOptions="End" />
+            <Button
+                Margin="0,0,10,10"
+                BackgroundColor="{StaticResource Primary}"
+                Clicked="Button_Clicked_1"
+                FontFamily="Msbold"
+                FontSize="26"
+                HorizontalOptions="End"
+                Text="Next ➜"
+                TextColor="White"
+                VerticalOptions="End" />
+        </Grid>
+    </Grid>
 </ContentPage>

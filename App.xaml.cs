@@ -8,7 +8,7 @@ namespace HomeCleaningTemplate
         {
             InitializeComponent();
 
-            MainPage = new StartPage();
+            MainPage = new NavigationPage( new StartPage());
         }
     }
 }

@@ -69,6 +69,7 @@
                 WidthRequest="200" />
             <Button
                 BackgroundColor="White"
+                Clicked="Button_Clicked"
                 CornerRadius="62"
                 FontFamily="Msbold"
                 FontSize="18"
