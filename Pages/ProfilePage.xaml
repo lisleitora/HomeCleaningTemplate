@@ -1,12 +1,83 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="HomeCleaningTemplate.Pages.ProfilePage"
-             Title="ProfilePage">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+<ContentPage
+    x:Class="HomeCleaningTemplate.Pages.ProfilePage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="ProfilePage">
+    <Grid BackgroundColor="{StaticResource Primary}" RowDefinitions="150,*">
+        <HorizontalStackLayout Grid.Row="0">
+            <Image
+                Margin="20,40,20,0"
+                HeightRequest="90"
+                HorizontalOptions="Start"
+                Source="profile.png"
+                VerticalOptions="Center" />
+            <VerticalStackLayout>
+                <Label
+                    Margin="0,40,0,0"
+                    FontAttributes="Bold"
+                    FontFamily="Msbold"
+                    FontSize="30"
+                    HorizontalOptions="Start"
+                    Text="Hi Kate,"
+                    TextColor="White"
+                    VerticalOptions="Center" />
+                <Label
+                    Margin="0,0,0,0"
+                    FontAttributes="Bold"
+                    FontFamily="Msbold"
+                    FontSize="30"
+                    HorizontalOptions="Start"
+                    Text="welcome back"
+                    TextColor="White"
+                    VerticalOptions="Center" />
+                <Label
+                    Grid.Row="1"
+                    Margin="0,0"
+                    FontFamily="Msbold"
+                    FontSize="20"
+                    HorizontalOptions="Center"
+                    Text="Profile completed"
+                    TextColor="{StaticResource Secondary}"
+                    VerticalOptions="Center"
+                    VerticalTextAlignment="Center" />
+            </VerticalStackLayout>
+        </HorizontalStackLayout>
+        <Grid Grid.Row="1">
+            <Border
+                Margin="0,25,0,0"
+                BackgroundColor="White"
+                StrokeShape="RoundRectangle 40,40,0,0"
+                StrokeThickness="4" />
+            <VerticalStackLayout>
+                <Label
+                    Margin="0,70,0,0"
+                    FontAttributes="Bold"
+                    FontFamily="Msbold"
+                    FontSize="39"
+                    HorizontalOptions="Center"
+                    Text="Cleaning on demand"
+                    TextColor="White" />
+                <Label
+                    Grid.Row="1"
+                    Margin="60,20"
+                    FontFamily="Msbold"
+                    FontSize="20"
+                    HorizontalOptions="Center"
+                    Text="Book an appointment in less than 60 seconds and get on the schedule as early as tomorrow."
+                    TextColor="White"
+                    VerticalOptions="Center"
+                    VerticalTextAlignment="Center" />
+            </VerticalStackLayout>
+            <Button
+                Margin="10,0,0,10"
+                BackgroundColor="{StaticResource Primary}"
+                FontFamily="Msbold"
+                FontSize="26"
+                HorizontalOptions="Start"
+                Text="Back"
+                TextColor="White"
+                VerticalOptions="End" />
+        </Grid>
+    </Grid>
 </ContentPage>
