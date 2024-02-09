@@ -19,7 +19,7 @@
                     FontFamily="Msbold"
                     FontSize="30"
                     HorizontalOptions="Start"
-                    Text="Hi Kate,"
+                    Text="Hi User,"
                     TextColor="White"
                     VerticalOptions="Center" />
                 <Label
@@ -46,38 +46,99 @@
         <Grid Grid.Row="1">
             <Border
                 Margin="0,25,0,0"
-                BackgroundColor="White"
+                BackgroundColor="#FAFAFA"
                 StrokeShape="RoundRectangle 40,40,0,0"
                 StrokeThickness="4" />
-            <VerticalStackLayout>
-                <Label
-                    Margin="0,70,0,0"
-                    FontAttributes="Bold"
-                    FontFamily="Msbold"
-                    FontSize="39"
-                    HorizontalOptions="Center"
-                    Text="Cleaning on demand"
-                    TextColor="White" />
-                <Label
-                    Grid.Row="1"
-                    Margin="60,20"
-                    FontFamily="Msbold"
-                    FontSize="20"
-                    HorizontalOptions="Center"
-                    Text="Book an appointment in less than 60 seconds and get on the schedule as early as tomorrow."
-                    TextColor="White"
-                    VerticalOptions="Center"
-                    VerticalTextAlignment="Center" />
-            </VerticalStackLayout>
-            <Button
-                Margin="10,0,0,10"
-                BackgroundColor="{StaticResource Primary}"
-                FontFamily="Msbold"
-                FontSize="26"
-                HorizontalOptions="Start"
-                Text="Back"
-                TextColor="White"
-                VerticalOptions="End" />
+            <Grid>
+                <VerticalStackLayout>
+                    <Label
+                        Margin="30,70,0,30"
+                        FontAttributes="Bold"
+                        FontFamily="Msbold"
+                        FontSize="29"
+                        HorizontalOptions="Start"
+                        Text="Account"
+                        TextColor="Black" />
+                    <Grid>
+
+                        <Button
+                            Margin="0"
+                            Padding="0,10"
+                            BackgroundColor="White"
+                            FontFamily="Msbold"
+                            FontSize="26"
+                            HorizontalOptions="Start"
+                            Text="Notifications"
+                            TextColor="Black"
+                            VerticalOptions="End"
+                            WidthRequest="400" />
+                        <Image
+                            Margin="20,0"
+                            HeightRequest="35"
+                            HorizontalOptions="Start"
+                            Source="bell.pdf" />
+                    </Grid>
+                    <Grid>
+
+                        <Button
+                            Margin="0"
+                            Padding="0,10"
+                            BackgroundColor="White"
+                            Clicked="GoCalendar"
+                            FontFamily="Msbold"
+                            FontSize="26"
+                            HorizontalOptions="Start"
+                            Text="My bookings"
+                            TextColor="Black"
+                            VerticalOptions="End"
+                            WidthRequest="400" />
+                        <Image
+                            Margin="20,0"
+                            HeightRequest="35"
+                            HorizontalOptions="Start"
+                            Source="calendar.pdf" />
+                    </Grid>
+                    <Grid>
+
+                        <Button
+                            Margin="0"
+                            Padding="0,10"
+                            BackgroundColor="White"
+                            Clicked="GoMyPlan"
+                            FontFamily="Msbold"
+                            FontSize="26"
+                            HorizontalOptions="Start"
+                            Text="My Plan"
+                            TextColor="Black"
+                            VerticalOptions="End"
+                            WidthRequest="400" />
+                        <Image
+                            Margin="20,0"
+                            HeightRequest="35"
+                            HorizontalOptions="Start"
+                            Source="verify.pdf" />
+                    </Grid>
+                    <Grid>
+
+                        <Button
+                            Margin="0"
+                            Padding="0,10"
+                            BackgroundColor="White"
+                            FontFamily="Msbold"
+                            FontSize="26"
+                            HorizontalOptions="Start"
+                            Text="Addresses"
+                            TextColor="Black"
+                            VerticalOptions="End"
+                            WidthRequest="400" />
+                        <Image
+                            Margin="20,0"
+                            HeightRequest="35"
+                            HorizontalOptions="Start"
+                            Source="local.pdf" />
+                    </Grid>
+                </VerticalStackLayout>
+            </Grid>
         </Grid>
     </Grid>
 </ContentPage>
