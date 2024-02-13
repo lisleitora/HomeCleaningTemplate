@@ -44,12 +44,12 @@
             </VerticalStackLayout>
         </HorizontalStackLayout>
         <Grid Grid.Row="1">
-            <Border
+                    <Border
                 Margin="0,25,0,0"
                 BackgroundColor="#FAFAFA"
                 StrokeShape="RoundRectangle 40,40,0,0"
                 StrokeThickness="4" />
-            <Grid>
+            <ScrollView>
                 <VerticalStackLayout>
                     <Label
                         Margin="30,70,0,30"
@@ -59,7 +59,7 @@
                         HorizontalOptions="Start"
                         Text="Account"
                         TextColor="Black" />
-                    <Grid>
+                    <Grid Margin="0,2.5">
 
                         <Button
                             Margin="0"
@@ -78,8 +78,7 @@
                             HorizontalOptions="Start"
                             Source="bell.pdf" />
                     </Grid>
-                    <Grid>
-
+                    <Grid Margin="0,2.5">
                         <Button
                             Margin="0"
                             Padding="0,10"
@@ -98,8 +97,7 @@
                             HorizontalOptions="Start"
                             Source="calendar.pdf" />
                     </Grid>
-                    <Grid>
-
+                    <Grid Margin="0,2.5">
                         <Button
                             Margin="0"
                             Padding="0,10"
@@ -118,7 +116,7 @@
                             HorizontalOptions="Start"
                             Source="verify.pdf" />
                     </Grid>
-                    <Grid>
+                    <Grid Margin="0,2.5">
 
                         <Button
                             Margin="0"
@@ -137,8 +135,74 @@
                             HorizontalOptions="Start"
                             Source="local.pdf" />
                     </Grid>
+                    <Label
+                        Margin="30,70,0,30"
+                        FontAttributes="Bold"
+                        FontFamily="Msbold"
+                        FontSize="29"
+                        HorizontalOptions="Start"
+                        Text="Account"
+                        TextColor="Black" />
+                    <Grid Margin="0,2.5">
+
+                        <Button
+         Margin="0"
+         Padding="0,10"
+         BackgroundColor="White"
+         FontFamily="Msbold"
+         FontSize="26"
+         HorizontalOptions="Start"
+         Text="Notifications"
+         TextColor="Black"
+         VerticalOptions="End"
+         WidthRequest="400" />
+                        <Image
+         Margin="20,0"
+         HeightRequest="35"
+         HorizontalOptions="Start"
+         Source="bell.pdf" />
+                    </Grid>
+                    <Grid Margin="0,2.5">
+                        <Button
+         Margin="0"
+         Padding="0,10"
+         BackgroundColor="White"
+         Clicked="GoCalendar"
+         FontFamily="Msbold"
+         FontSize="26"
+         HorizontalOptions="Start"
+         Text="My bookings"
+         TextColor="Black"
+         VerticalOptions="End"
+         WidthRequest="400" />
+                        <Image
+         Margin="20,0"
+         HeightRequest="35"
+         HorizontalOptions="Start"
+         Source="calendar.pdf" />
+                    </Grid>
+                    <Grid Margin="0,2.5">
+                        <Button
+         Margin="0"
+         Padding="0,10"
+         BackgroundColor="White"
+         Clicked="GoMyPlan"
+         FontFamily="Msbold"
+         FontSize="26"
+         HorizontalOptions="Start"
+         Text="My Plan"
+         TextColor="Black"
+         VerticalOptions="End"
+         WidthRequest="400" />
+                        <Image
+         Margin="20,0"
+         HeightRequest="35"
+         HorizontalOptions="Start"
+         Source="mail.pdf" />
+                    </Grid>
+
                 </VerticalStackLayout>
-            </Grid>
+            </ScrollView>
         </Grid>
     </Grid>
 </ContentPage>
