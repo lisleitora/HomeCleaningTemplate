@@ -32,15 +32,64 @@
                         TextColor="Black"
                         VerticalOptions="Center" />
                     <HorizontalStackLayout>
-                        <ImageButton
-                            Margin="0"
-                            HeightRequest="100"
+                        <Image
+                            Margin="10,0,15,25"
+                            HeightRequest="130"
                             Source="deepclean.png" />
-                        <ImageButton
-                            Margin="0"
-                            HeightRequest="100"
+                        <Image
+                            Margin="0,0,15,25"
+                            HeightRequest="130"
                             Source="lightclean.png" />
                     </HorizontalStackLayout>
+                    <HorizontalStackLayout>
+                        <Label
+                            Margin="0,0,5,0"
+                            FontAttributes="Bold"
+                            FontFamily="MsBold"
+                            FontSize="20"
+                            HorizontalOptions="Start"
+                            Text="Selected Cleaning"
+                            TextColor="Black"
+                            VerticalOptions="Center" />
+                        <Label
+                            Margin="0"
+                            FontAttributes="Bold"
+                            FontFamily="MsBold"
+                            FontSize="20"
+                            HorizontalOptions="Start"
+                            Text="UpKeep Cleaning"
+                            TextColor="Black"
+                            VerticalOptions="Center" />
+                    </HorizontalStackLayout>
+                    <HorizontalStackLayout>
+                        <Grid Margin="70,0">
+                            <Button BackgroundColor="Transparent" Clicked="Button_Clicked2" />
+                            <Image
+                                Margin="10,0,15,0"
+                                HeightRequest="25"
+                                Source="voidverify.png" />
+                            <Image
+                                x:Name="PgPink1"
+                                Margin="10,0,15,0"
+                                HeightRequest="25"
+                                IsVisible="false"
+                                Source="pinkverify.png" />
+                        </Grid>
+                        <Grid Margin="60,0">
+                            <Button BackgroundColor="Transparent" Clicked="Button_Clicked" />
+                            <Image
+                                Margin="0,0,15,0"
+                                HeightRequest="25"
+                                Source="voidverify.png" />
+                            <Image
+                                x:Name="PgPink2"
+                                Margin="0,0,15,0"
+                                HeightRequest="25"
+                                IsVisible="false"
+                                Source="pinkverify.png" />
+                        </Grid>
+                    </HorizontalStackLayout>
+
                 </VerticalStackLayout>
             </ScrollView>
         </Grid>
