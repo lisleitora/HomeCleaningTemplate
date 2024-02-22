@@ -1,83 +1,183 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage
-    x:Class="HomeCleaningTemplate.Pages.ProfilePage"
-    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    Title="ProfilePage">
-    <Grid BackgroundColor="{StaticResource Primary}" RowDefinitions="150,*">
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage x:Class="HomeCleaningTemplate.Pages.ProfilePage"
+             xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="ProfilePage">
+    <Grid BackgroundColor="{StaticResource Primary}"
+          RowDefinitions="150,*">
         <HorizontalStackLayout Grid.Row="0">
-            <Image
-                Margin="20,40,20,0"
-                HeightRequest="90"
-                HorizontalOptions="Start"
-                Source="profile.png"
-                VerticalOptions="Center" />
+            <Image Margin="20,40,20,0"
+                   HeightRequest="90"
+                   HorizontalOptions="Start"
+                   Source="profile.png"
+                   VerticalOptions="Center" />
             <VerticalStackLayout>
-                <Label
-                    Margin="0,40,0,0"
-                    FontAttributes="Bold"
-                    FontFamily="Msbold"
-                    FontSize="30"
-                    HorizontalOptions="Start"
-                    Text="Hi Kate,"
-                    TextColor="White"
-                    VerticalOptions="Center" />
-                <Label
-                    Margin="0,0,0,0"
-                    FontAttributes="Bold"
-                    FontFamily="Msbold"
-                    FontSize="30"
-                    HorizontalOptions="Start"
-                    Text="welcome back"
-                    TextColor="White"
-                    VerticalOptions="Center" />
-                <Label
-                    Grid.Row="1"
-                    Margin="0,0"
-                    FontFamily="Msbold"
-                    FontSize="20"
-                    HorizontalOptions="Center"
-                    Text="Profile completed"
-                    TextColor="{StaticResource Secondary}"
-                    VerticalOptions="Center"
-                    VerticalTextAlignment="Center" />
+                <Label Margin="0,40,0,0"
+                       FontAttributes="Bold"
+                       FontFamily="Msbold"
+                       FontSize="30"
+                       HorizontalOptions="Start"
+                       Text="Hi User,"
+                       TextColor="White"
+                       VerticalOptions="Center" />
+                <Label Margin="0,0,0,0"
+                       FontAttributes="Bold"
+                       FontFamily="Msbold"
+                       FontSize="30"
+                       HorizontalOptions="Start"
+                       Text="welcome back"
+                       TextColor="White"
+                       VerticalOptions="Center" />
+                <Label Grid.Row="1"
+                       Margin="0,0"
+                       FontFamily="Msbold"
+                       FontSize="20"
+                       HorizontalOptions="Center"
+                       Text="Profile completed"
+                       TextColor="{StaticResource Secondary}"
+                       VerticalOptions="Center"
+                       VerticalTextAlignment="Center" />
             </VerticalStackLayout>
         </HorizontalStackLayout>
         <Grid Grid.Row="1">
-            <Border
-                Margin="0,25,0,0"
-                BackgroundColor="White"
-                StrokeShape="RoundRectangle 40,40,0,0"
-                StrokeThickness="4" />
-            <VerticalStackLayout>
-                <Label
-                    Margin="0,70,0,0"
-                    FontAttributes="Bold"
-                    FontFamily="Msbold"
-                    FontSize="39"
-                    HorizontalOptions="Center"
-                    Text="Cleaning on demand"
-                    TextColor="White" />
-                <Label
-                    Grid.Row="1"
-                    Margin="60,20"
-                    FontFamily="Msbold"
-                    FontSize="20"
-                    HorizontalOptions="Center"
-                    Text="Book an appointment in less than 60 seconds and get on the schedule as early as tomorrow."
-                    TextColor="White"
-                    VerticalOptions="Center"
-                    VerticalTextAlignment="Center" />
-            </VerticalStackLayout>
-            <Button
-                Margin="10,0,0,10"
-                BackgroundColor="White"
-                FontFamily="Msbold"
-                FontSize="26"
-                HorizontalOptions="Start"
-                Text="Back"
-                TextColor="White"
-                VerticalOptions="End" />
+            <Border Margin="0,25,0,0"
+                    BackgroundColor="#FAFAFA"
+                    StrokeShape="RoundRectangle 40,40,0,0"
+                    StrokeThickness="4" />
+            <ScrollView>
+                <VerticalStackLayout>
+                    <Label Margin="30,70,0,30"
+                           FontAttributes="Bold"
+                           FontFamily="Msbold"
+                           FontSize="29"
+                           HorizontalOptions="Start"
+                           Text="Account"
+                           TextColor="Black" />
+                    <Grid Margin="0,2.5">
+                        <Button Margin="0"
+                                Padding="0,10"
+                                BackgroundColor="White"
+                                FontFamily="Msbold"
+                                FontSize="26"
+                                HorizontalOptions="Start"
+                                Text="Notifications"
+                                TextColor="Black"
+                                VerticalOptions="End"
+                                WidthRequest="400" />
+                        <Image Margin="20,0"
+                               HeightRequest="35"
+                               HorizontalOptions="Start"
+                               Source="bell.pdf" />
+                    </Grid>
+                    <Grid Margin="0,2.5">
+                        <Button Margin="0"
+                                Padding="0,10"
+                                BackgroundColor="White"
+                                Clicked="GoCalendar"
+                                FontFamily="Msbold"
+                                FontSize="26"
+                                HorizontalOptions="Start"
+                                Text="My bookings"
+                                TextColor="Black"
+                                VerticalOptions="End"
+                                WidthRequest="400" />
+                        <Image Margin="20,0"
+                               HeightRequest="35"
+                               HorizontalOptions="Start"
+                               Source="calendar.pdf" />
+                    </Grid>
+                    <Grid Margin="0,2.5">
+                        <Button Margin="0"
+                                Padding="0,10"
+                                BackgroundColor="White"
+                                Clicked="GoMyPlan"
+                                FontFamily="Msbold"
+                                FontSize="26"
+                                HorizontalOptions="Start"
+                                Text="My Plan"
+                                TextColor="Black"
+                                VerticalOptions="End"
+                                WidthRequest="400" />
+                        <Image Margin="20,0"
+                               HeightRequest="35"
+                               HorizontalOptions="Start"
+                               Source="verify.pdf" />
+                    </Grid>
+                    <Grid Margin="0,2.5">
+                        <Button Margin="0"
+                                Padding="0,10"
+                                BackgroundColor="White"
+                                FontFamily="Msbold"
+                                FontSize="26"
+                                HorizontalOptions="Start"
+                                Text="Addresses"
+                                TextColor="Black"
+                                VerticalOptions="End"
+                                WidthRequest="400" />
+                        <Image Margin="20,0"
+                               HeightRequest="35"
+                               HorizontalOptions="Start"
+                               Source="local.pdf" />
+                    </Grid>
+                    <Label Margin="30,50,0,30"
+                           FontAttributes="Bold"
+                           FontFamily="Msbold"
+                           FontSize="29"
+                           HorizontalOptions="Start"
+                           Text="Share"
+                           TextColor="Black" />
+                    <Grid Margin="0,2.5">
+                        <Button Margin="0"
+                                Padding="0,10"
+                                BackgroundColor="White"
+                                FontFamily="Msbold"
+                                FontSize="26"
+                                HorizontalOptions="Start"
+                                Text="FaceBook"
+                                TextColor="Black"
+                                VerticalOptions="End"
+                                WidthRequest="400" />
+                        <Image Margin="25,0"
+                               HeightRequest="30"
+                               HorizontalOptions="Start"
+                               Source="facebook.pdf" />
+                    </Grid>
+                    <Grid Margin="0,2.5">
+                        <Button Margin="0"
+                                Padding="0,10"
+                                BackgroundColor="White"
+                                Clicked="GoCalendar"
+                                FontFamily="Msbold"
+                                FontSize="26"
+                                HorizontalOptions="Start"
+                                Text="Twitter"
+                                TextColor="Black"
+                                VerticalOptions="End"
+                                WidthRequest="400" />
+                        <Image Margin="20,0"
+                               HeightRequest="30"
+                               HorizontalOptions="Start"
+                               Source="twitter.pdf" />
+                    </Grid>
+                    <Grid Margin="0,2.5">
+                        <Button Margin="0"
+                                Padding="0,10"
+                                BackgroundColor="White"
+                                Clicked="GoMyPlan"
+                                FontFamily="Msbold"
+                                FontSize="26"
+                                HorizontalOptions="Start"
+                                Text="Gmail"
+                                TextColor="Black"
+                                VerticalOptions="End"
+                                WidthRequest="400" />
+                        <Image Margin="20,0"
+                               HeightRequest="30"
+                               HorizontalOptions="Start"
+                               Source="mail.pdf" />
+                    </Grid>
+                </VerticalStackLayout>
+            </ScrollView>
         </Grid>
     </Grid>
 </ContentPage>
