@@ -89,7 +89,92 @@
                                 Source="pinkverify.png" />
                         </Grid>
                     </HorizontalStackLayout>
-
+                    <Label
+                        Margin="30,10"
+                        FontAttributes="Bold"
+                        FontFamily="Msbold"
+                        FontSize="25"
+                        HorizontalOptions="Start"
+                        Text="Selected Frequency"
+                        TextColor="{StaticResource Black}"
+                        VerticalOptions="Center" />
+                    <Grid ColumnDefinitions="*,*,*">
+                        <Button
+                            x:Name="pgWeeklyOff"
+                            Grid.Column="0"
+                            BackgroundColor="{StaticResource White}"
+                            BorderColor="{StaticResource Gray}"
+                            BorderWidth="2"
+                            Clicked="Weekly"
+                            CornerRadius="5"
+                            FontFamily="Msbold"
+                            FontSize="18"
+                            IsVisible="true"
+                            Text="Weekly"
+                            TextColor="{StaticResource Gray}" />
+                        <Button
+                            x:Name="pgWeeklyOn"
+                            Grid.Column="0"
+                            BackgroundColor="{StaticResource Pink}"
+                            BorderColor="{StaticResource Gray}"
+                            Clicked="Weekly"
+                            CornerRadius="5"
+                            FontFamily="Msbold"
+                            FontSize="18"
+                            IsVisible="false"
+                            Text="Weekly"
+                            TextColor="{StaticResource White}" />
+                        <Button
+                            x:Name="pgBiWeeklyOff"
+                            Grid.Column="1"
+                            BackgroundColor="{StaticResource White}"
+                            BorderColor="{StaticResource Gray}"
+                            BorderWidth="2"
+                            Clicked="BiWeekly"
+                            CornerRadius="5"
+                            FontFamily="Msbold"
+                            FontSize="18"
+                            IsVisible="true"
+                            Text="Bi-Weekly"
+                            TextColor="{StaticResource Gray}" />
+                        <Button
+                            x:Name="pgBiWeeklyOn"
+                            Grid.Column="1"
+                            BackgroundColor="{StaticResource Pink}"
+                            BorderColor="{StaticResource Gray}"
+                            Clicked="BiWeekly"
+                            CornerRadius="5"
+                            FontFamily="Msbold"
+                            FontSize="18"
+                            IsVisible="false"
+                            Text="Bi-Weekly"
+                            TextColor="{StaticResource White}" />
+                        <Button
+                            x:Name="pgMonthlyOff"
+                            Grid.Column="2"
+                            BackgroundColor="{StaticResource White}"
+                            BorderColor="{StaticResource Gray}"
+                            BorderWidth="2"
+                            Clicked="Monthly"
+                            CornerRadius="5"
+                            FontFamily="Msbold"
+                            FontSize="18"
+                            IsVisible="true"
+                            Text="Monthly"
+                            TextColor="{StaticResource Gray}" />
+                        <Button
+                            x:Name="pgMonthlyOn"
+                            Grid.Column="2"
+                            BackgroundColor="{StaticResource Pink}"
+                            BorderColor="{StaticResource Gray}"
+                            Clicked="Monthly"
+                            CornerRadius="5"
+                            FontFamily="Msbold"
+                            FontSize="18"
+                            IsVisible="false"
+                            Text="Monthly"
+                            TextColor="{StaticResource White}" />
+                    </Grid>
                 </VerticalStackLayout>
             </ScrollView>
         </Grid>
