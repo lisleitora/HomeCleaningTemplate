@@ -48,7 +48,7 @@
                             FontFamily="MsBold"
                             FontSize="20"
                             HorizontalOptions="Start"
-                            Text="Selected Cleaning"
+                            Text="   Initial Cleaning "
                             TextColor="Black"
                             VerticalOptions="Center" />
                         <Label
@@ -175,6 +175,102 @@
                             Text="Monthly"
                             TextColor="{StaticResource White}" />
                     </Grid>
+                    <Label
+                        Margin="30,10"
+                        FontAttributes="Bold"
+                        FontFamily="Msbold"
+                        FontSize="25"
+                        HorizontalOptions="Start"
+                        Text="Selected Extras"
+                        TextColor="{StaticResource Black}"
+                        VerticalOptions="Center" />
+                    <ScrollView Orientation="Horizontal">
+                        <VerticalStackLayout>
+                            <HorizontalStackLayout>
+                                <Grid Margin="10" RowDefinitions="*,25">
+                                    <Button BackgroundColor="Transparent" Clicked="Button_Clicked2" />
+                                    <Image HeightRequest="60" Source="fridge.png" />
+                                    <Label
+                                        Grid.Row="1"
+                                        FontAttributes="Bold"
+                                        FontFamily="MsBold"
+                                        FontSize="20"
+                                        HorizontalOptions="Center"
+                                        Text="Inside Fridge"
+                                        TextColor="{StaticResource Black}"
+                                        VerticalOptions="Start" />
+                                </Grid>
+                                <Grid Margin="10" RowDefinitions="*,25">
+                                    <Button BackgroundColor="Transparent" Clicked="Button_Clicked2" />
+                                    <Image HeightRequest="60" Source="fruitbag.png" />
+                                    <Label
+                                        Grid.Row="1"
+                                        FontAttributes="Bold"
+                                        FontFamily="MsBold"
+                                        FontSize="20"
+                                        HorizontalOptions="Center"
+                                        Text="Organizing"
+                                        TextColor="{StaticResource Black}"
+                                        VerticalOptions="Start" />
+                                </Grid>
+                                <Grid Margin="10" RowDefinitions="*,25">
+                                    <Button BackgroundColor="Transparent" Clicked="Button_Clicked2" />
+                                    <Image HeightRequest="60" Source="window.png" />
+                                    <Label
+                                        Grid.Row="1"
+                                        FontAttributes="Bold"
+                                        FontFamily="MsBold"
+                                        FontSize="20"
+                                        HorizontalOptions="Center"
+                                        Text="Small Blinds"
+                                        TextColor="{StaticResource Black}"
+                                        VerticalOptions="Start" />
+                                </Grid>
+                            </HorizontalStackLayout>
+                            <HorizontalStackLayout Margin="0">
+                                <Grid Margin="10" RowDefinitions="*,25">
+                                    <Button BackgroundColor="Transparent" Clicked="Button_Clicked2" />
+                                    <Image HeightRequest="60" Source="patio.png" />
+                                    <Label
+                                        Grid.Row="1"
+                                        FontAttributes="Bold"
+                                        FontFamily="MsBold"
+                                        FontSize="20"
+                                        HorizontalOptions="Center"
+                                        Text="      Patio          "
+                                        TextColor="{StaticResource Black}"
+                                        VerticalOptions="Start" />
+                                </Grid>
+                                <Grid Margin="10" RowDefinitions="*,25">
+                                    <Button BackgroundColor="Transparent" Clicked="Button_Clicked2" />
+                                    <Image HeightRequest="60" Source="fruitbag.png" />
+                                    <Label
+                                        Grid.Row="1"
+                                        FontAttributes="Bold"
+                                        FontFamily="MsBold"
+                                        FontSize="20"
+                                        HorizontalOptions="Center"
+                                        Text="Organizing"
+                                        TextColor="{StaticResource Black}"
+                                        VerticalOptions="Start" />
+                                </Grid>
+
+                                <Grid Margin="10" RowDefinitions="*,25">
+                                    <Button BackgroundColor="Transparent" Clicked="Button_Clicked2" />
+                                    <Image HeightRequest="60" Source="window.png" />
+                                    <Label
+                                        Grid.Row="1"
+                                        FontAttributes="Bold"
+                                        FontFamily="MsBold"
+                                        FontSize="20"
+                                        HorizontalOptions="Center"
+                                        Text="Small Blinds"
+                                        TextColor="{StaticResource Black}"
+                                        VerticalOptions="Start" />
+                                </Grid>
+                            </HorizontalStackLayout>
+                        </VerticalStackLayout>
+                    </ScrollView>
                 </VerticalStackLayout>
             </ScrollView>
         </Grid>
