@@ -188,8 +188,16 @@
                         <VerticalStackLayout>
                             <HorizontalStackLayout>
                                 <Grid Margin="10" RowDefinitions="*,25">
-                                    <Button BackgroundColor="Transparent" Clicked="Button_Clicked2" />
+                                    <Button BackgroundColor="Transparent" Clicked="Button_Clicked3" />
                                     <Image HeightRequest="60" Source="fridge.png" />
+                                    <Image
+                                        x:Name="PgPink3"
+                                        Margin="55,1,0,0"
+                                        HeightRequest="25"
+                                        HorizontalOptions="Center"
+                                        IsVisible="false"
+                                        Source="pinkverify.png"
+                                        VerticalOptions="Start" />
                                     <Label
                                         Grid.Row="1"
                                         FontAttributes="Bold"
@@ -201,8 +209,16 @@
                                         VerticalOptions="Start" />
                                 </Grid>
                                 <Grid Margin="10" RowDefinitions="*,25">
-                                    <Button BackgroundColor="Transparent" Clicked="Button_Clicked2" />
+                                    <Button BackgroundColor="Transparent" Clicked="Button_Clicked4" />
                                     <Image HeightRequest="60" Source="fruitbag.png" />
+                                    <Image
+                                        x:Name="PgPink4"
+                                        Margin="55,1,0,0"
+                                        HeightRequest="25"
+                                        HorizontalOptions="Center"
+                                        IsVisible="false"
+                                        Source="pinkverify.png"
+                                        VerticalOptions="Start" />
                                     <Label
                                         Grid.Row="1"
                                         FontAttributes="Bold"
@@ -214,8 +230,16 @@
                                         VerticalOptions="Start" />
                                 </Grid>
                                 <Grid Margin="10" RowDefinitions="*,25">
-                                    <Button BackgroundColor="Transparent" Clicked="Button_Clicked2" />
+                                    <Button BackgroundColor="Transparent" Clicked="Button_Clicked5" />
                                     <Image HeightRequest="60" Source="window.png" />
+                                    <Image
+                                        x:Name="PgPink5"
+                                        Margin="55,1,0,0"
+                                        HeightRequest="25"
+                                        HorizontalOptions="Center"
+                                        IsVisible="false"
+                                        Source="pinkverify.png"
+                                        VerticalOptions="Start" />
                                     <Label
                                         Grid.Row="1"
                                         FontAttributes="Bold"
@@ -229,8 +253,16 @@
                             </HorizontalStackLayout>
                             <HorizontalStackLayout Margin="0">
                                 <Grid Margin="10" RowDefinitions="*,25">
-                                    <Button BackgroundColor="Transparent" Clicked="Button_Clicked2" />
+                                    <Button BackgroundColor="Transparent" Clicked="Button_Clicked6" />
                                     <Image HeightRequest="60" Source="patio.png" />
+                                    <Image
+                                        x:Name="PgPink6"
+                                        Margin="55,1,0,0"
+                                        HeightRequest="25"
+                                        HorizontalOptions="Center"
+                                        IsVisible="false"
+                                        Source="pinkverify.png"
+                                        VerticalOptions="Start" />
                                     <Label
                                         Grid.Row="1"
                                         FontAttributes="Bold"
@@ -242,8 +274,16 @@
                                         VerticalOptions="Start" />
                                 </Grid>
                                 <Grid Margin="10" RowDefinitions="*,25">
-                                    <Button BackgroundColor="Transparent" Clicked="Button_Clicked2" />
+                                    <Button BackgroundColor="Transparent" Clicked="Button_Clicked7" />
                                     <Image HeightRequest="60" Source="fruitbag.png" />
+                                    <Image
+                                        x:Name="PgPink7"
+                                        Margin="55,1,0,0"
+                                        HeightRequest="25"
+                                        HorizontalOptions="Center"
+                                        IsVisible="false"
+                                        Source="pinkverify.png"
+                                        VerticalOptions="Start" />
                                     <Label
                                         Grid.Row="1"
                                         FontAttributes="Bold"
@@ -256,8 +296,16 @@
                                 </Grid>
 
                                 <Grid Margin="10" RowDefinitions="*,25">
-                                    <Button BackgroundColor="Transparent" Clicked="Button_Clicked2" />
+                                    <Button BackgroundColor="Transparent" Clicked="Button_Clicked8" />
                                     <Image HeightRequest="60" Source="window.png" />
+                                    <Image
+                                        x:Name="PgPink8"
+                                        Margin="55,1,0,0"
+                                        HeightRequest="25"
+                                        HorizontalOptions="Center"
+                                        IsVisible="false"
+                                        Source="pinkverify.png"
+                                        VerticalOptions="Start" />
                                     <Label
                                         Grid.Row="1"
                                         FontAttributes="Bold"
