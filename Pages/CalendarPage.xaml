@@ -14,24 +14,77 @@
                 StrokeThickness="4" />
             <ScrollView>
 
-                <Grid Margin="0,2.5">
-                    <Button
-                        Margin="0"
-                        Padding="0,10"
-                        BackgroundColor="White"
-                        FontFamily="Msbold"
-                        FontSize="26"
+                <VerticalStackLayout Margin="20,80">
+
+                    <Label
+                        Grid.Row="1"
+                        Margin="0,0,0,20"
+                        FontAttributes="Bold"
+                        FontFamily="MsBold"
+                        FontSize="20"
                         HorizontalOptions="Start"
-                        Text="Addresses"
-                        TextColor="Black"
-                        VerticalOptions="End"
-                        WidthRequest="400" />
-                    <Image
-                        Margin="20,0"
-                        HeightRequest="35"
-                        HorizontalOptions="Start"
-                        Source="local.pdf" />
-                </Grid>
+                        Opacity="0.5"
+                        Text="18 April 2019"
+                        TextColor="{StaticResource Black}"
+                        VerticalOptions="Start" />
+                    <Grid ColumnDefinitions="100,*">
+
+                        <Label
+                            Grid.Row="1"
+                            FontAttributes="Bold"
+                            FontFamily="Msbold"
+                            FontSize="20"
+                            HorizontalOptions="Start"
+                            Text="10 am"
+                            TextColor="{StaticResource Black}"
+                            VerticalOptions="Start" />
+                        <Image
+                            Grid.Column="1"
+                            HeightRequest="200"
+                            HorizontalOptions="End"
+                            Source="men.pdf"
+                            VerticalOptions="Center"
+                            WidthRequest="280" />
+                    </Grid>
+                    <Grid ColumnDefinitions="100,*">
+
+                        <Label
+                            Grid.Row="1"
+                            FontAttributes="Bold"
+                            FontFamily="Msbold"
+                            FontSize="20"
+                            HorizontalOptions="Start"
+                            Text="10 am"
+                            TextColor="{StaticResource Black}"
+                            VerticalOptions="Start" />
+                        <Image
+                            Grid.Column="1"
+                            HeightRequest="200"
+                            HorizontalOptions="End"
+                            Source="woman.pdf"
+                            VerticalOptions="Center"
+                            WidthRequest="280" />
+                    </Grid>
+                    <Grid ColumnDefinitions="100,*">
+
+                        <Label
+                            Grid.Row="1"
+                            FontAttributes="Bold"
+                            FontFamily="Msbold"
+                            FontSize="20"
+                            HorizontalOptions="Start"
+                            Text="10 am"
+                            TextColor="{StaticResource Black}"
+                            VerticalOptions="Start" />
+                        <Image
+                            Grid.Column="1"
+                            HeightRequest="200"
+                            HorizontalOptions="End"
+                            Source="men.pdf"
+                            VerticalOptions="Center"
+                            WidthRequest="280" />
+                    </Grid>
+                </VerticalStackLayout>
             </ScrollView>
             <Image
                 Margin="0,25,0,0"
