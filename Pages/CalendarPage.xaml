@@ -42,9 +42,76 @@
                             Grid.Column="1"
                             HeightRequest="200"
                             HorizontalOptions="End"
-                            Source="men.pdf"
+                            Source="background.pdf"
                             VerticalOptions="Center"
                             WidthRequest="280" />
+                        <Image
+                            Grid.Column="1"
+                            Margin="0,30,12,0"
+                            HeightRequest="60"
+                            HorizontalOptions="End"
+                            Source="mface.pdf"
+                            VerticalOptions="Start" />
+                        <Image
+                            Grid.Column="1"
+                            Margin="-10,0,0,35"
+                            HeightRequest="14"
+                            HorizontalOptions="Start"
+                            Source="msg.pdf"
+                            VerticalOptions="End" />
+
+                        <Image
+                            Grid.Column="1"
+                            Margin="0,0,0,23"
+                            HeightRequest="80"
+                            HorizontalOptions="End"
+                            IsVisible="true"
+                            Opacity=".23"
+                            Source="paid.pdf"
+                            VerticalOptions="End" />
+                        <VerticalStackLayout
+                            Grid.Column="1"
+                            Margin="0,0,0,30"
+                            HorizontalOptions="Start"
+                            VerticalOptions="Center">
+
+                            <Label
+                                Grid.Row="1"
+                                FontAttributes="Bold"
+                                FontFamily="Msbold"
+                                FontSize="20"
+                                HorizontalOptions="Start"
+                                Text="10 am"
+                                TextColor="{StaticResource Primary}"
+                                VerticalOptions="Start" />
+                            <Label
+                                Grid.Row="1"
+                                FontAttributes="Bold"
+                                FontFamily="MsBold"
+                                FontSize="20"
+                                HorizontalOptions="Start"
+                                Text="10 am"
+                                TextColor="{StaticResource Black}"
+                                VerticalOptions="Start" />
+                            <Label
+                                Grid.Row="1"
+                                FontAttributes="Bold"
+                                FontFamily="Msbold"
+                                FontSize="20"
+                                HorizontalOptions="Start"
+                                Text="10 am"
+                                TextColor="{StaticResource Primary}"
+                                VerticalOptions="Start" />
+                            <Label
+                                Grid.Row="1"
+                                FontAttributes="Bold"
+                                FontFamily="MsBold"
+                                FontSize="20"
+                                HorizontalOptions="Start"
+                                Text="10 am"
+                                TextColor="{StaticResource Black}"
+                                VerticalOptions="Start" />
+                        </VerticalStackLayout>
                     </Grid>
                     <Grid ColumnDefinitions="100,*">
 
