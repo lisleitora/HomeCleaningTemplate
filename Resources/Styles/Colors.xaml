@@ -7,6 +7,7 @@
     <Color x:Key="Primary">#5C4DB1</Color>
     <Color x:Key="PrimaryDark">#ac99ea</Color>
     <Color x:Key="DarkText">Black</Color>
+    <Color x:Key="LDarkText">#464646</Color>
     <Color x:Key="PrimaryDarkText">#242424</Color>
     <Color x:Key="Secondary">#FFBF67</Color>
     <Color x:Key="SecondaryDarkText">#9880e5</Color>
