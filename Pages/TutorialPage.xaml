@@ -18,10 +18,10 @@
                 StrokeThickness="4" />
             <VerticalStackLayout>
                 <Label
-                    Margin="0,70,0,0"
+                    Margin="0,70,0,13"
                     FontAttributes="Bold"
                     FontFamily="Msbold"
-                    FontSize="39"
+                    FontSize="25"
                     HorizontalOptions="Center"
                     Text="Cleaning on demand"
                     TextColor="White" />
