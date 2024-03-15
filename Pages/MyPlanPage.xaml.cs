@@ -5,23 +5,26 @@ public partial class MyPlanPage : ContentPage
 	public MyPlanPage()
 	{
 		InitializeComponent();
-	}
+    }
 
-    private void Button_Clicked(object sender, EventArgs e)
+    private async void UpKeepButton(object sender, EventArgs e)
     { bool click = PgPink2.IsVisible;
         if (click == true)
-       { 
-        PgPink2.IsVisible = false;
+       {
+            pgInitialImage.FadeTo(.3, 1000);
+            pgInitialImage.ScaleTo(1, 1000);
+            PgPink2.IsVisible = false;
             click = false;
         }
         else
         {
+            Helpers.Balanga(pgInitialImage);
             PgPink2.IsVisible = true;
             click = true;
         }
     }
 
-    private void Button_Clicked2(object sender, EventArgs e)
+    private void InitialButton(object sender, EventArgs e)
     {
         bool click = PgPink1.IsVisible;
         if (click == true)
@@ -31,56 +34,76 @@ public partial class MyPlanPage : ContentPage
         }
         else
         {
+            Helpers.Balanga(pgInitialImage);
             PgPink1.IsVisible = true;
             click = true;
         }
     }
 
-    private void Weekly(object sender, EventArgs e)
+    private async void Weekly(object sender, EventArgs e)
     {
         bool clicked =! pgWeeklyOn.IsVisible;
         if (clicked == true)
-        {
+        { 
+           await Helpers.Rotate(pgWeeklyOn);
+            pgWeeklyOff.IsVisible = false;
             pgWeeklyOn.IsVisible = true;
             pgMonthlyOn.IsVisible = false;
             pgBiWeeklyOn.IsVisible = false;
+            pgMonthlyOff.IsVisible = true;
+            pgBiWeeklyOff.IsVisible = true;
             clicked = false;
         }
         else
         {
+            Helpers.Rotate(pgWeeklyOff);
+            pgWeeklyOff.IsVisible = true;
             pgWeeklyOn.IsVisible = false;
             clicked = true;
         }
     }
-    private void BiWeekly(object sender, EventArgs e)
+    private async void BiWeekly(object sender, EventArgs e)
     {
         bool clicked = !pgBiWeeklyOn.IsVisible;
         if (clicked == true)
         {
+           await Helpers.Rotate(pgBiWeeklyOn);
+            pgBiWeeklyOff.IsVisible = false;
             pgWeeklyOn.IsVisible = false;
             pgMonthlyOn.IsVisible = false;
             pgBiWeeklyOn.IsVisible = true;
+            pgMonthlyOff.IsVisible = true;
+            pgWeeklyOff.IsVisible = true;
             clicked = false;
         }
         else
         {
+            Helpers.Rotate(pgBiWeeklyOff);
+            pgBiWeeklyOff.IsVisible = true;
             pgBiWeeklyOn.IsVisible = false;
             clicked = true;
         }
     }
-    private void Monthly(object sender, EventArgs e)
+    private async void Monthly(object sender, EventArgs e)
     {
 
         bool clicked = !pgMonthlyOn.IsVisible;
         if (clicked == true)
         {
+            await Helpers.Rotate(pgMonthlyOn);
+            
+            pgMonthlyOff.IsVisible = false;
             pgWeeklyOn.IsVisible = false;
             pgMonthlyOn.IsVisible = true;
             pgBiWeeklyOn.IsVisible = false;
+            pgBiWeeklyOff.IsVisible = true;
+            pgWeeklyOff.IsVisible = true;
             clicked = false;
         }
         else
         {
+            Helpers.Rotate(pgMonthlyOff);
+            pgMonthlyOff.IsVisible = true;
             pgMonthlyOn.IsVisible = false;
             clicked = true;
         }
@@ -170,4 +193,5 @@ public partial class MyPlanPage : ContentPage
             click = true;
         }
     }
+    
 }

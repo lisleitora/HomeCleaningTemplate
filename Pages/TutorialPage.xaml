@@ -36,22 +36,22 @@
                     VerticalOptions="Center"
                     VerticalTextAlignment="Center" />
             </VerticalStackLayout>
-            <Button
-                Margin="10,0,0,10"
+            <Button FontAttributes="Bold"
+                Margin="10,0,0,15"
                 BackgroundColor="{StaticResource Primary}"
                 Clicked="Button_Clicked"
                 FontFamily="Msbold"
-                FontSize="26"
+                FontSize="20"
                 HorizontalOptions="Start"
                 Text="Back"
                 TextColor="White"
                 VerticalOptions="End" />
-            <Button
-                Margin="0,0,10,10"
+            <Button FontAttributes="Bold"
+                Margin="0,0,10,15"
                 BackgroundColor="{StaticResource Primary}"
                 Clicked="Button_Clicked_1"
                 FontFamily="Msbold"
-                FontSize="26"
+                FontSize="20"
                 HorizontalOptions="End"
                 Text="Next ➜"
                 TextColor="White"

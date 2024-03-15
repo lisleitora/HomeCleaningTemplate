@@ -33,12 +33,15 @@
                         VerticalOptions="Center" />
                     <HorizontalStackLayout>
                         <Image
+                            x:Name="pgInitialImage"
                             Margin="10,0,15,25"
                             HeightRequest="130"
+                            Opacity=".3"
                             Source="deepclean.png" />
                         <Image
                             Margin="0,0,15,25"
                             HeightRequest="130"
+                            Opacity=".3"
                             Source="lightclean.png" />
                     </HorizontalStackLayout>
                     <HorizontalStackLayout>
@@ -63,7 +66,7 @@
                     </HorizontalStackLayout>
                     <HorizontalStackLayout>
                         <Grid Margin="70,0">
-                            <Button BackgroundColor="Transparent" Clicked="Button_Clicked2" />
+                            <Button BackgroundColor="Transparent" Clicked="InitialButton" />
                             <Image
                                 Margin="10,0,15,0"
                                 HeightRequest="25"
@@ -76,7 +79,7 @@
                                 Source="pinkverify.png" />
                         </Grid>
                         <Grid Margin="60,0">
-                            <Button BackgroundColor="Transparent" Clicked="Button_Clicked" />
+                            <Button BackgroundColor="Transparent" Clicked="UpKeepButton" />
                             <Image
                                 Margin="0,0,15,0"
                                 HeightRequest="25"
