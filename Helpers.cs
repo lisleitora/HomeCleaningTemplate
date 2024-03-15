@@ -18,11 +18,11 @@ namespace HomeCleaningTemplate
                 obj.ScaleTo(1, 700);
                 obj.RotationY = 0;
         }
-        public async static Task Rotate(VisualElement obj)
+        public async static Task Rotate(VisualElement obj,bool isRight)
         {
-            obj.RotateYTo(360, 400);
+            obj.RotateYTo(isRight ?360:-360, 400);
             obj.ScaleTo(1.2, 400);
-            await Task.Delay(400);
+            await Task.Delay(800).ConfigureAwait(true);
             obj.ScaleTo(1, 400);
             obj.RotationY = 0;
         }

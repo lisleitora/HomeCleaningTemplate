@@ -45,20 +45,20 @@ public partial class MyPlanPage : ContentPage
         bool clicked =! pgWeeklyOn.IsVisible;
         if (clicked == true)
         { 
-           await Helpers.Rotate(pgWeeklyOn);
             pgWeeklyOff.IsVisible = false;
             pgWeeklyOn.IsVisible = true;
             pgMonthlyOn.IsVisible = false;
             pgBiWeeklyOn.IsVisible = false;
             pgMonthlyOff.IsVisible = true;
             pgBiWeeklyOff.IsVisible = true;
+           await Helpers.Rotate(pgWeeklyOn, true);
             clicked = false;
         }
         else
         {
-            Helpers.Rotate(pgWeeklyOff);
             pgWeeklyOff.IsVisible = true;
             pgWeeklyOn.IsVisible = false;
+            await Helpers.Rotate(pgWeeklyOff, false);
             clicked = true;
         }
     }
@@ -67,20 +67,20 @@ public partial class MyPlanPage : ContentPage
         bool clicked = !pgBiWeeklyOn.IsVisible;
         if (clicked == true)
         {
-           await Helpers.Rotate(pgBiWeeklyOn);
             pgBiWeeklyOff.IsVisible = false;
             pgWeeklyOn.IsVisible = false;
             pgMonthlyOn.IsVisible = false;
             pgBiWeeklyOn.IsVisible = true;
             pgMonthlyOff.IsVisible = true;
             pgWeeklyOff.IsVisible = true;
+           await Helpers.Rotate(pgBiWeeklyOn, true);
             clicked = false;
         }
         else
         {
-            Helpers.Rotate(pgBiWeeklyOff);
             pgBiWeeklyOff.IsVisible = true;
             pgBiWeeklyOn.IsVisible = false;
+           await Helpers.Rotate(pgBiWeeklyOff,false);
             clicked = true;
         }
     }
@@ -90,7 +90,6 @@ public partial class MyPlanPage : ContentPage
         bool clicked = !pgMonthlyOn.IsVisible;
         if (clicked == true)
         {
-            await Helpers.Rotate(pgMonthlyOn);
             
             pgMonthlyOff.IsVisible = false;
             pgWeeklyOn.IsVisible = false;
@@ -98,13 +97,14 @@ public partial class MyPlanPage : ContentPage
             pgBiWeeklyOn.IsVisible = false;
             pgBiWeeklyOff.IsVisible = true;
             pgWeeklyOff.IsVisible = true;
+            await Helpers.Rotate(pgMonthlyOn,true);
             clicked = false;
         }
         else
         {
-            Helpers.Rotate(pgMonthlyOff);
             pgMonthlyOff.IsVisible = true;
             pgMonthlyOn.IsVisible = false;
+           await Helpers.Rotate(pgMonthlyOff,false);
             clicked = true;
         }
     }
