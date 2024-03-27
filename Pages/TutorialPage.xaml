@@ -3,59 +3,148 @@
     x:Class="HomeCleaningTemplate.Pages.TutorialPage"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    Title="TutorialPage">
-    <Grid RowDefinitions="*,*">
-        <Image
-            Grid.Row="0"
-            HorizontalOptions="End"
-            Source="cleaner2.png" />
-        <Grid Grid.Row="1">
-            <Border
-                Margin="0,25,0,0"
-                BackgroundColor="{StaticResource Primary}"
-                Stroke="{StaticResource Primary}"
-                StrokeShape="RoundRectangle 40,40,0,0"
-                StrokeThickness="4" />
-            <VerticalStackLayout>
-                <Label
-                    Margin="0,70,0,13"
+    Title="TutorialPage"
+    NavigationPage.HasNavigationBar="False">
+    <Grid>
+        <Grid RowDefinitions="*,*">
+            <Image
+                Grid.Row="0"
+                HorizontalOptions="End"
+                Source="cleaner2.png" />
+            <Grid x:Name="pgDownThing" Grid.Row="1">
+                <Border
+                    Margin="0,25,0,-100"
+                    BackgroundColor="{StaticResource Primary}"
+                    Stroke="{StaticResource Primary}"
+                    StrokeShape="RoundRectangle 40,40,0,0"
+                    StrokeThickness="4" />
+                <VerticalStackLayout>
+                    <Label
+                        Margin="0,70,0,13"
+                        FontAttributes="Bold"
+                        FontFamily="Msbold"
+                        FontSize="25"
+                        HorizontalOptions="Center"
+                        Text="Cleaning on demand"
+                        TextColor="White" />
+                    <Label
+                        Grid.Row="1"
+                        Margin="60,20"
+                        FontFamily="Msbold"
+                        FontSize="20"
+                        HorizontalOptions="Center"
+                        Text="Book an appointment in less than 60 seconds and get on the schedule as early as tomorrow."
+                        TextColor="White"
+                        VerticalOptions="Center"
+                        VerticalTextAlignment="Center" />
+                </VerticalStackLayout>
+                <Button
+                    Margin="10,0,0,15"
+                    BackgroundColor="{StaticResource Primary}"
+                    Clicked="Back"
                     FontAttributes="Bold"
                     FontFamily="Msbold"
-                    FontSize="25"
+                    FontSize="20"
+                    HorizontalOptions="Start"
+                    Text="Back"
+                    TextColor="White"
+                    VerticalOptions="End" />
+                <Button
+                    Margin="0,0,10,15"
+                    BackgroundColor="{StaticResource Primary}"
+                    Clicked="Button_Clicked_1"
+                    FontAttributes="Bold"
+                    FontFamily="Msbold"
+                    FontSize="20"
+                    HorizontalOptions="End"
+                    Text="Next ➜"
+                    TextColor="White"
+                    VerticalOptions="End" />
+            </Grid>
+        </Grid>
+
+
+
+        <Grid
+            x:Name="pgStart"
+            BackgroundColor="{StaticResource Primary}"
+            RowDefinitions="20,50,.5*,.5*,80">
+            <Label
+                Grid.Row="1"
+                FontFamily="Msbold"
+                FontSize="20"
+                HorizontalOptions="Center"
+                Text="∞EnterpriseName∞"
+                TextColor="White"
+                VerticalOptions="Center" />
+
+            <VerticalStackLayout Grid.Row="2">
+                <Label
+                    Margin="0,20,0,0"
+                    FontFamily="Msbold"
+                    FontSize="50"
                     HorizontalOptions="Center"
-                    Text="Cleaning on demand"
+                    Text="Clean Home"
+                    TextColor="White" />
+                <Label
+                    FontFamily="MsBol"
+                    FontSize="50"
+                    HorizontalOptions="Center"
+                    Text="Clean Life."
                     TextColor="White" />
                 <Label
                     Grid.Row="1"
-                    Margin="60,20"
+                    Margin="0,18,0,0"
                     FontFamily="Msbold"
                     FontSize="20"
                     HorizontalOptions="Center"
-                    Text="Book an appointment in less than 60 seconds and get on the schedule as early as tomorrow."
+                    Text="Book cleaners at the "
                     TextColor="White"
-                    VerticalOptions="Center"
-                    VerticalTextAlignment="Center" />
+                    VerticalOptions="Center" />
+                <Label
+                    Grid.Row="1"
+                    FontFamily="Msbold"
+                    FontSize="20"
+                    HorizontalOptions="Center"
+                    Text="comfort of your home."
+                    TextColor="White"
+                    VerticalOptions="Center" />
             </VerticalStackLayout>
-            <Button FontAttributes="Bold"
-                Margin="10,0,0,15"
-                BackgroundColor="{StaticResource Primary}"
-                Clicked="Button_Clicked"
-                FontFamily="Msbold"
-                FontSize="20"
-                HorizontalOptions="Start"
-                Text="Back"
-                TextColor="White"
-                VerticalOptions="End" />
-            <Button FontAttributes="Bold"
-                Margin="0,0,10,15"
-                BackgroundColor="{StaticResource Primary}"
-                Clicked="Button_Clicked_1"
-                FontFamily="Msbold"
-                FontSize="20"
-                HorizontalOptions="End"
-                Text="Next ➜"
-                TextColor="White"
-                VerticalOptions="End" />
+            <Image
+                Grid.Row="3"
+                Aspect="AspectFill"
+                HorizontalOptions="FillAndExpand"
+                Source="cleaner1.png" />
+            <Grid Grid.Row="4">
+                <Label
+                    BackgroundColor="White"
+                    HeightRequest="60"
+                    HorizontalOptions="End"
+                    Text="preenchedor"
+                    TextColor="White"
+                    VerticalOptions="End" />
+                <Label
+                    BackgroundColor="White"
+                    HeightRequest="30"
+                    HorizontalOptions="End"
+                    Text="preenchedor"
+                    TextColor="White"
+                    VerticalOptions="End"
+                    WidthRequest="200" />
+                <Button
+                    BackgroundColor="White"
+                    Clicked="Button_Clicked"
+                    CornerRadius="62"
+                    FontFamily="Msbold"
+                    FontSize="18"
+                    HeightRequest="60"
+                    HorizontalOptions="End"
+                    IsVisible="true"
+                    Text="Get Started"
+                    TextColor="{StaticResource Primary}"
+                    VerticalOptions="End"
+                    WidthRequest="200" />
+            </Grid>
         </Grid>
     </Grid>
 </ContentPage>
