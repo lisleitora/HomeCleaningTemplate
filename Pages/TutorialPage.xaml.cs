@@ -13,6 +13,8 @@ public partial class TutorialPage : ContentPage
         await Task.Delay(200);
 
         pgDownThing.TranslationY = pgDownThing.Height;
+        pgRightImage.TranslationX = pgRightImage.Width;
+        pgRightImage.TranslationY = pgRightImage.Width * -1;
     }
 
     private void Button_Clicked_1(object sender, EventArgs e)
@@ -22,12 +24,16 @@ public partial class TutorialPage : ContentPage
     }
     private async void Button_Clicked(object sender, EventArgs e)
     {
-        await Helpers.Shrink(pgStart, true);
-        await Helpers.BoingAppearUp(pgDownThing, true);
+        await Helpers.Shrink(pgStart, pgBackButton, true);
+        await Helpers.BoingAppearUp(pgDownThing, true); 
+        await Helpers.AppearRight(pgRightImage, true);
     }
-    private void Back(object sender, EventArgs e)
+    private async void Back(object sender, EventArgs e)
     {
+        await Task.Delay(200);
         pgDownThing.TranslationY = pgDownThing.Height;
-
+        pgRightImage.TranslationX = pgRightImage.Height;
+        pgRightImage.TranslationY = pgRightImage.Width*-1;
+        await Helpers.Expand(pgStart, pgBackButton, true);
     }
 }

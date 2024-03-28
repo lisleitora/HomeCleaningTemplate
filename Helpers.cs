@@ -26,26 +26,36 @@ namespace HomeCleaningTemplate
             obj.ScaleTo(1, 400);
             obj.RotationY = 0;
         }
-        public async static Task Shrink(VisualElement obj, bool isRight)
+        public async static Task Shrink(VisualElement obj, VisualElement obj2, bool isRight)
         {
             obj.RotateXTo(isRight ? 360 : -360, 600);
             obj.ScaleTo(0, 600);
             await Task.Delay(800).ConfigureAwait(true);
             obj.IsVisible = false;
+            obj2.IsVisible = true;
+            obj.RotationX = 0;
         }
-        public async static Task Expand(VisualElement obj, bool isRight)
+        public async static Task Expand(VisualElement obj, VisualElement obj2, bool isRight)
         {
-            obj.RotateYTo(isRight ? 360 : -360, 400);
-            obj.ScaleTo(1.1, 400);
+            obj.IsVisible = true;
+            obj.RotateXTo(isRight ? 360 : -360, 600);
+            obj.ScaleTo(1.1, 600);
             await Task.Delay(800).ConfigureAwait(true);
             obj.ScaleTo(1, 400);
-            obj.RotationY = 0;
+            obj.RotationX = 0;
+            obj2.IsVisible= false;
         }
         public async static Task BoingAppearUp(VisualElement obj, bool isRight)
         {
             obj.TranslateTo(0,0,400,Easing.BounceOut);
            // await Task.Delay(500).ConfigureAwait(true);
            
+        }
+        public async static Task AppearRight(VisualElement obj, bool isRight)
+        {
+            obj.TranslateTo(0, 0, 400, Easing.SinOut);
+            // await Task.Delay(500).ConfigureAwait(true);
+
         }
     }
 }

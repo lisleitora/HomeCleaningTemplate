@@ -8,6 +8,7 @@
     <Grid>
         <Grid RowDefinitions="*,*">
             <Image
+                x:Name="pgRightImage"
                 Grid.Row="0"
                 HorizontalOptions="End"
                 Source="cleaner2.png" />
@@ -39,6 +40,7 @@
                         VerticalTextAlignment="Center" />
                 </VerticalStackLayout>
                 <Button
+                    x:Name="pgBackButton"
                     Margin="10,0,0,15"
                     BackgroundColor="{StaticResource Primary}"
                     Clicked="Back"
