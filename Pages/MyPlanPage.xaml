@@ -39,6 +39,7 @@
                             Opacity=".3"
                             Source="deepclean.png" />
                         <Image
+                            x:Name="pgUpKeepImage"
                             Margin="0,0,15,25"
                             HeightRequest="130"
                             Opacity=".3"
