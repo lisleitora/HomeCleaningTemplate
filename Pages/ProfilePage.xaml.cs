@@ -5,11 +5,13 @@ public partial class ProfilePage : ContentPage
 	public ProfilePage()
 	{
 		InitializeComponent();
+        
 	}
 
-    private void GoCalendar(object sender, EventArgs e)
+    private async void GoCalendar(object sender, EventArgs e)
     {
-        Application.Current.MainPage.Navigation.PushAsync(new CalendarPage());
+    //    Application.Current.MainPage.Navigation.PushAsync(new CalendarPage());
+    pgCalendarPage.IsVisible = true;
     }
 
     private void GoMyPlan(object sender, EventArgs e)

@@ -1,60 +1,68 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ContentPage x:Class="HomeCleaningTemplate.Pages.ProfilePage"
-             xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             Title="ProfilePage">
-    <Grid BackgroundColor="{StaticResource Primary}"
-          RowDefinitions="150,*">
-        <HorizontalStackLayout Grid.Row="0">
-            <Image Margin="20,40,20,0"
-                   HeightRequest="90"
-                   HorizontalOptions="Start"
-                   Source="profile.png"
-                   VerticalOptions="Center" />
-            <VerticalStackLayout>
-                <Label Margin="0,40,0,0"
-                       FontAttributes="Bold"
-                       FontFamily="Msbold"
-                       FontSize="30"
-                       HorizontalOptions="Start"
-                       Text="Hi User,"
-                       TextColor="White"
-                       VerticalOptions="Center" />
-                <Label Margin="0,0,0,0"
-                       FontAttributes="Bold"
-                       FontFamily="Msbold"
-                       FontSize="30"
-                       HorizontalOptions="Start"
-                       Text="welcome back"
-                       TextColor="White"
-                       VerticalOptions="Center" />
-                <Label Grid.Row="1"
-                       Margin="0,0"
-                       FontFamily="Msbold"
-                       FontSize="20"
-                       HorizontalOptions="Center"
-                       Text="Profile completed"
-                       TextColor="{StaticResource Secondary}"
-                       VerticalOptions="Center"
-                       VerticalTextAlignment="Center" />
-            </VerticalStackLayout>
-        </HorizontalStackLayout>
-        <Grid Grid.Row="1">
-            <Border Margin="0,25,0,0"
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="HomeCleaningTemplate.Pages.ProfilePage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="ProfilePage">
+    <Grid>
+        <Grid BackgroundColor="{StaticResource Primary}" RowDefinitions="150,*">
+            <HorizontalStackLayout Grid.Row="0">
+                <Image
+                    Margin="20,40,20,0"
+                    HeightRequest="90"
+                    HorizontalOptions="Start"
+                    Source="profile.png"
+                    VerticalOptions="Center" />
+                <VerticalStackLayout>
+                    <Label
+                        Margin="0,40,0,0"
+                        FontAttributes="Bold"
+                        FontFamily="Msbold"
+                        FontSize="30"
+                        HorizontalOptions="Start"
+                        Text="Hi User,"
+                        TextColor="White"
+                        VerticalOptions="Center" />
+                    <Label
+                        Margin="0,0,0,0"
+                        FontAttributes="Bold"
+                        FontFamily="Msbold"
+                        FontSize="30"
+                        HorizontalOptions="Start"
+                        Text="welcome back"
+                        TextColor="White"
+                        VerticalOptions="Center" />
+                    <Label
+                        Grid.Row="1"
+                        Margin="0,0"
+                        FontFamily="Msbold"
+                        FontSize="20"
+                        HorizontalOptions="Center"
+                        Text="Profile completed"
+                        TextColor="{StaticResource Secondary}"
+                        VerticalOptions="Center"
+                        VerticalTextAlignment="Center" />
+                </VerticalStackLayout>
+            </HorizontalStackLayout>
+            <Grid Grid.Row="1">
+                <Border
+                    Margin="0,25,0,0"
                     BackgroundColor="#FAFAFA"
                     StrokeShape="RoundRectangle 40,40,0,0"
                     StrokeThickness="4" />
-            <ScrollView>
-                <VerticalStackLayout>
-                    <Label Margin="30,70,0,30"
-                           FontAttributes="Bold"
-                           FontFamily="Msbold"
-                           FontSize="29"
-                           HorizontalOptions="Start"
-                           Text="Account"
-                           TextColor="Black" />
-                    <Grid Margin="0,2.5">
-                        <Button Margin="0"
+                <ScrollView>
+                    <VerticalStackLayout>
+                        <Label
+                            Margin="30,70,0,30"
+                            FontAttributes="Bold"
+                            FontFamily="Msbold"
+                            FontSize="29"
+                            HorizontalOptions="Start"
+                            Text="Account"
+                            TextColor="Black" />
+                        <Grid Margin="0,2.5">
+                            <Button
+                                Margin="0"
                                 Padding="0,10"
                                 BackgroundColor="White"
                                 FontFamily="Msbold"
@@ -64,13 +72,15 @@
                                 TextColor="Black"
                                 VerticalOptions="End"
                                 WidthRequest="400" />
-                        <Image Margin="20,0"
-                               HeightRequest="35"
-                               HorizontalOptions="Start"
-                               Source="bell.pdf" />
-                    </Grid>
-                    <Grid Margin="0,2.5">
-                        <Button Margin="0"
+                            <Image
+                                Margin="20,0"
+                                HeightRequest="35"
+                                HorizontalOptions="Start"
+                                Source="bell.pdf" />
+                        </Grid>
+                        <Grid Margin="0,2.5">
+                            <Button
+                                Margin="0"
                                 Padding="0,10"
                                 BackgroundColor="White"
                                 Clicked="GoCalendar"
@@ -81,13 +91,15 @@
                                 TextColor="Black"
                                 VerticalOptions="End"
                                 WidthRequest="400" />
-                        <Image Margin="20,0"
-                               HeightRequest="35"
-                               HorizontalOptions="Start"
-                               Source="calendar.pdf" />
-                    </Grid>
-                    <Grid Margin="0,2.5">
-                        <Button Margin="0"
+                            <Image
+                                Margin="20,0"
+                                HeightRequest="35"
+                                HorizontalOptions="Start"
+                                Source="calendar.pdf" />
+                        </Grid>
+                        <Grid Margin="0,2.5">
+                            <Button
+                                Margin="0"
                                 Padding="0,10"
                                 BackgroundColor="White"
                                 Clicked="GoMyPlan"
@@ -98,13 +110,15 @@
                                 TextColor="Black"
                                 VerticalOptions="End"
                                 WidthRequest="400" />
-                        <Image Margin="20,0"
-                               HeightRequest="35"
-                               HorizontalOptions="Start"
-                               Source="verify.pdf" />
-                    </Grid>
-                    <Grid Margin="0,2.5">
-                        <Button Margin="0"
+                            <Image
+                                Margin="20,0"
+                                HeightRequest="35"
+                                HorizontalOptions="Start"
+                                Source="verify.pdf" />
+                        </Grid>
+                        <Grid Margin="0,2.5">
+                            <Button
+                                Margin="0"
                                 Padding="0,10"
                                 BackgroundColor="White"
                                 FontFamily="Msbold"
@@ -114,20 +128,23 @@
                                 TextColor="Black"
                                 VerticalOptions="End"
                                 WidthRequest="400" />
-                        <Image Margin="20,0"
-                               HeightRequest="35"
-                               HorizontalOptions="Start"
-                               Source="local.pdf" />
-                    </Grid>
-                    <Label Margin="30,50,0,30"
-                           FontAttributes="Bold"
-                           FontFamily="Msbold"
-                           FontSize="29"
-                           HorizontalOptions="Start"
-                           Text="Share"
-                           TextColor="Black" />
-                    <Grid Margin="0,2.5">
-                        <Button Margin="0"
+                            <Image
+                                Margin="20,0"
+                                HeightRequest="35"
+                                HorizontalOptions="Start"
+                                Source="local.pdf" />
+                        </Grid>
+                        <Label
+                            Margin="30,50,0,30"
+                            FontAttributes="Bold"
+                            FontFamily="Msbold"
+                            FontSize="29"
+                            HorizontalOptions="Start"
+                            Text="Share"
+                            TextColor="Black" />
+                        <Grid Margin="0,2.5">
+                            <Button
+                                Margin="0"
                                 Padding="0,10"
                                 BackgroundColor="White"
                                 FontFamily="Msbold"
@@ -137,13 +154,15 @@
                                 TextColor="Black"
                                 VerticalOptions="End"
                                 WidthRequest="400" />
-                        <Image Margin="25,0"
-                               HeightRequest="30"
-                               HorizontalOptions="Start"
-                               Source="facebook.pdf" />
-                    </Grid>
-                    <Grid Margin="0,2.5">
-                        <Button Margin="0"
+                            <Image
+                                Margin="25,0"
+                                HeightRequest="30"
+                                HorizontalOptions="Start"
+                                Source="facebook.pdf" />
+                        </Grid>
+                        <Grid Margin="0,2.5">
+                            <Button
+                                Margin="0"
                                 Padding="0,10"
                                 BackgroundColor="White"
                                 Clicked="GoCalendar"
@@ -154,13 +173,15 @@
                                 TextColor="Black"
                                 VerticalOptions="End"
                                 WidthRequest="400" />
-                        <Image Margin="20,0"
-                               HeightRequest="30"
-                               HorizontalOptions="Start"
-                               Source="twitter.pdf" />
-                    </Grid>
-                    <Grid Margin="0,2.5">
-                        <Button Margin="0"
+                            <Image
+                                Margin="20,0"
+                                HeightRequest="30"
+                                HorizontalOptions="Start"
+                                Source="twitter.pdf" />
+                        </Grid>
+                        <Grid Margin="0,2.5">
+                            <Button
+                                Margin="0"
                                 Padding="0,10"
                                 BackgroundColor="White"
                                 Clicked="GoMyPlan"
@@ -171,13 +192,464 @@
                                 TextColor="Black"
                                 VerticalOptions="End"
                                 WidthRequest="400" />
-                        <Image Margin="20,0"
-                               HeightRequest="30"
-                               HorizontalOptions="Start"
-                               Source="mail.pdf" />
-                    </Grid>
-                </VerticalStackLayout>
-            </ScrollView>
+                            <Image
+                                Margin="20,0"
+                                HeightRequest="30"
+                                HorizontalOptions="Start"
+                                Source="mail.pdf" />
+                        </Grid>
+                    </VerticalStackLayout>
+                </ScrollView>
+            </Grid>
+
+
+
+            <!--  ...............................\/CALENDAR PAGE\/...............................  -->
+
+
+
+            <Grid
+                x:Name="pgCalendarPage"
+                BackgroundColor="{StaticResource Primary}"
+                IsVisible="false"
+                RowDefinitions="170,*">
+                <Image
+                    x:Name="pgcalendar"
+                    HeightRequest="140"
+                    Source="weekcalendar.png" />
+                <Grid x:Name="pgAssignments" Grid.Row="1">
+                    <Border
+                        x:Name="pgassignments"
+                        Margin="0,25,0,0"
+                        BackgroundColor="#FAFAFA"
+                        StrokeShape="RoundRectangle 40,40,0,0"
+                        StrokeThickness="4" />
+                    <ScrollView>
+
+                        <VerticalStackLayout Margin="20,80">
+
+                            <Label
+                                Grid.Row="1"
+                                Margin="0,0,0,20"
+                                FontAttributes="Bold"
+                                FontFamily="MsBold"
+                                FontSize="20"
+                                HorizontalOptions="Start"
+                                Opacity="0.5"
+                                Text="18 April 2019"
+                                TextColor="{StaticResource Black}"
+                                VerticalOptions="Start" />
+                            <Grid ColumnDefinitions="100,*">
+
+                                <Label
+                                    Grid.Row="1"
+                                    FontAttributes="Bold"
+                                    FontFamily="Msbold"
+                                    FontSize="20"
+                                    HorizontalOptions="Start"
+                                    Text="10 am"
+                                    TextColor="{StaticResource Black}"
+                                    VerticalOptions="Start" />
+                                <Image
+                                    Grid.Column="1"
+                                    HeightRequest="200"
+                                    HorizontalOptions="End"
+                                    Source="background.pdf"
+                                    VerticalOptions="Center"
+                                    WidthRequest="280" />
+                                <Image
+                                    Grid.Column="1"
+                                    Margin="0,30,12,0"
+                                    HeightRequest="60"
+                                    HorizontalOptions="End"
+                                    Source="mface.pdf"
+                                    VerticalOptions="Start" />
+                                <Image
+                                    Grid.Column="1"
+                                    Margin="-10,0,0,35"
+                                    HeightRequest="14"
+                                    HorizontalOptions="Start"
+                                    Source="msg.pdf"
+                                    VerticalOptions="End" />
+
+                                <Label
+                                    Grid.Row="1"
+                                    Grid.Column="1"
+                                    Margin="0,0,30,-20"
+                                    FontAttributes="Bold"
+                                    FontFamily="Msbold"
+                                    FontSize="19"
+                                    HeightRequest="80"
+                                    HorizontalOptions="End"
+                                    IsVisible="true"
+                                    Text="$70"
+                                    TextColor="{StaticResource Primary}"
+                                    VerticalOptions="End" />
+                                <Image
+                                    Grid.Column="1"
+                                    Margin="0,0,0,23"
+                                    HeightRequest="80"
+                                    HorizontalOptions="End"
+                                    IsVisible="false"
+                                    Opacity=".23"
+                                    Source="paid.pdf"
+                                    VerticalOptions="End" />
+                                <VerticalStackLayout
+                                    Grid.Column="1"
+                                    Margin="-8,0,0,0"
+                                    HorizontalOptions="Start"
+                                    VerticalOptions="Center">
+
+                                    <Label
+                                        Grid.Row="1"
+                                        Margin="0,-30,0,18"
+                                        FontAttributes="Bold"
+                                        FontFamily="Msbold"
+                                        FontSize="13"
+                                        HorizontalOptions="Start"
+                                        Text="Michael Hamilton"
+                                        TextColor="{StaticResource Primary}"
+                                        VerticalOptions="Start" />
+                                    <Label
+                                        Grid.Row="1"
+                                        FontAttributes="Bold"
+                                        FontFamily="MsBold"
+                                        FontSize="10"
+                                        HorizontalOptions="Start"
+                                        Text="UpKeep Cleaning"
+                                        TextColor="{StaticResource LDarkText}"
+                                        VerticalOptions="Start" />
+                                    <HorizontalStackLayout Margin="0,5,0,10">
+                                        <Image
+                                            Grid.Column="1"
+                                            HorizontalOptions="Start"
+                                            Source="clock.pdf"
+                                            VerticalOptions="End"
+                                            WidthRequest="10" />
+                                        <Label
+                                            Grid.Row="1"
+                                            FontAttributes="Bold"
+                                            FontFamily="Msbold"
+                                            FontSize="9"
+                                            HorizontalOptions="Start"
+                                            Text="  10AM - 11AM"
+                                            TextColor="{StaticResource Primary}"
+                                            VerticalOptions="Start" />
+                                    </HorizontalStackLayout>
+                                    <HorizontalStackLayout Margin="0,5,0,0">
+                                        <Label
+                                            Grid.Row="1"
+                                            Margin="0,0,10,0"
+                                            FontAttributes="Bold"
+                                            FontFamily="MsBold"
+                                            FontSize="10"
+                                            HorizontalOptions="Start"
+                                            Text="Client Rating"
+                                            TextColor="{StaticResource LDarkText}"
+                                            VerticalOptions="Start" />
+                                        <Image
+                                            Grid.Column="1"
+                                            Margin="10,0,5,0"
+                                            HorizontalOptions="Start"
+                                            Source="star.pdf"
+                                            VerticalOptions="End"
+                                            WidthRequest="13" />
+                                        <Image
+                                            Grid.Column="1"
+                                            Margin="5,0"
+                                            HorizontalOptions="Start"
+                                            Source="star.pdf"
+                                            VerticalOptions="End"
+                                            WidthRequest="13" />
+                                        <Image
+                                            Grid.Column="1"
+                                            Margin="5,0"
+                                            HorizontalOptions="Start"
+                                            Source="star.pdf"
+                                            VerticalOptions="End"
+                                            WidthRequest="13" />
+                                    </HorizontalStackLayout>
+                                </VerticalStackLayout>
+                            </Grid>
+
+
+
+
+                            <Grid ColumnDefinitions="100,*">
+
+                                <Label
+                                    Grid.Row="1"
+                                    FontAttributes="Bold"
+                                    FontFamily="Msbold"
+                                    FontSize="20"
+                                    HorizontalOptions="Start"
+                                    Text="12 pm"
+                                    TextColor="{StaticResource Black}"
+                                    VerticalOptions="Start" />
+                                <Image
+                                    Grid.Column="1"
+                                    HeightRequest="200"
+                                    HorizontalOptions="End"
+                                    Source="background.pdf"
+                                    VerticalOptions="Center"
+                                    WidthRequest="280" />
+                                <Image
+                                    Grid.Column="1"
+                                    Margin="0,30,12,0"
+                                    HeightRequest="60"
+                                    HorizontalOptions="End"
+                                    Source="wface.pdf"
+                                    VerticalOptions="Start" />
+                                <Image
+                                    Grid.Column="1"
+                                    Margin="-10,0,0,35"
+                                    HeightRequest="14"
+                                    HorizontalOptions="Start"
+                                    Source="msg.pdf"
+                                    VerticalOptions="End" />
+
+                                <Label
+                                    Grid.Row="1"
+                                    Grid.Column="1"
+                                    Margin="0,0,30,-20"
+                                    FontAttributes="Bold"
+                                    FontFamily="Msbold"
+                                    FontSize="19"
+                                    HeightRequest="80"
+                                    HorizontalOptions="End"
+                                    IsVisible="false"
+                                    Text="$70"
+                                    TextColor="{StaticResource Primary}"
+                                    VerticalOptions="End" />
+                                <Image
+                                    Grid.Column="1"
+                                    Margin="0,0,0,23"
+                                    HeightRequest="80"
+                                    HorizontalOptions="End"
+                                    IsVisible="true"
+                                    Opacity=".23"
+                                    Source="paid.pdf"
+                                    VerticalOptions="End" />
+                                <VerticalStackLayout
+                                    Grid.Column="1"
+                                    Margin="-8,0,0,0"
+                                    HorizontalOptions="Start"
+                                    VerticalOptions="Center">
+
+                                    <Label
+                                        Grid.Row="1"
+                                        Margin="0,-30,0,18"
+                                        FontAttributes="Bold"
+                                        FontFamily="Msbold"
+                                        FontSize="13"
+                                        HorizontalOptions="Start"
+                                        Text="Alexandra Johnson"
+                                        TextColor="{StaticResource Primary}"
+                                        VerticalOptions="Start" />
+                                    <Label
+                                        Grid.Row="1"
+                                        FontAttributes="Bold"
+                                        FontFamily="MsBold"
+                                        FontSize="10"
+                                        HorizontalOptions="Start"
+                                        Text="UpKeep Cleaning"
+                                        TextColor="{StaticResource LDarkText}"
+                                        VerticalOptions="Start" />
+                                    <HorizontalStackLayout Margin="0,5,0,10">
+                                        <Image
+                                            Grid.Column="1"
+                                            HorizontalOptions="Start"
+                                            Source="clock.pdf"
+                                            VerticalOptions="End"
+                                            WidthRequest="10" />
+                                        <Label
+                                            Grid.Row="1"
+                                            FontAttributes="Bold"
+                                            FontFamily="Msbold"
+                                            FontSize="9"
+                                            HorizontalOptions="Start"
+                                            Text="  12PM - 1PM"
+                                            TextColor="{StaticResource Primary}"
+                                            VerticalOptions="Start" />
+                                    </HorizontalStackLayout>
+                                    <HorizontalStackLayout Margin="0,5,0,0">
+                                        <Label
+                                            Grid.Row="1"
+                                            Margin="0,0,10,0"
+                                            FontAttributes="Bold"
+                                            FontFamily="MsBold"
+                                            FontSize="10"
+                                            HorizontalOptions="Start"
+                                            Text="Client Rating"
+                                            TextColor="{StaticResource LDarkText}"
+                                            VerticalOptions="Start" />
+                                        <Image
+                                            Grid.Column="1"
+                                            Margin="10,0,5,0"
+                                            HorizontalOptions="Start"
+                                            Source="star.pdf"
+                                            VerticalOptions="End"
+                                            WidthRequest="13" />
+                                        <Image
+                                            Grid.Column="1"
+                                            Margin="5,0"
+                                            HorizontalOptions="Start"
+                                            Source="star.pdf"
+                                            VerticalOptions="End"
+                                            WidthRequest="13" />
+                                        <Image
+                                            Grid.Column="1"
+                                            Margin="5,0"
+                                            HorizontalOptions="Start"
+                                            Source="star.pdf"
+                                            VerticalOptions="End"
+                                            WidthRequest="13" />
+                                    </HorizontalStackLayout>
+                                </VerticalStackLayout>
+                            </Grid>
+                            <Grid
+                                x:Name="pgCalendar"
+                                ColumnDefinitions="100,*"
+                                IsVisible="false">
+
+                                <Label
+                                    Grid.Row="1"
+                                    FontAttributes="Bold"
+                                    FontFamily="Msbold"
+                                    FontSize="20"
+                                    HorizontalOptions="Start"
+                                    Text="3 pm"
+                                    TextColor="{StaticResource Black}"
+                                    VerticalOptions="Start" />
+                                <Image
+                                    Grid.Column="1"
+                                    HeightRequest="200"
+                                    HorizontalOptions="End"
+                                    Source="background.pdf"
+                                    VerticalOptions="Center"
+                                    WidthRequest="280" />
+                                <Image
+                                    Grid.Column="1"
+                                    Margin="0,30,12,0"
+                                    HeightRequest="60"
+                                    HorizontalOptions="End"
+                                    Source="mface.pdf"
+                                    VerticalOptions="Start" />
+                                <Image
+                                    Grid.Column="1"
+                                    Margin="-10,0,0,35"
+                                    HeightRequest="14"
+                                    HorizontalOptions="Start"
+                                    Source="msg.pdf"
+                                    VerticalOptions="End" />
+
+                                <Label
+                                    Grid.Row="1"
+                                    Grid.Column="1"
+                                    Margin="0,0,30,-20"
+                                    FontAttributes="Bold"
+                                    FontFamily="Msbold"
+                                    FontSize="19"
+                                    HeightRequest="80"
+                                    HorizontalOptions="End"
+                                    IsVisible="true"
+                                    Text="$150"
+                                    TextColor="{StaticResource Primary}"
+                                    VerticalOptions="End" />
+                                <Image
+                                    Grid.Column="1"
+                                    Margin="0,0,0,23"
+                                    HeightRequest="80"
+                                    HorizontalOptions="End"
+                                    IsVisible="false"
+                                    Opacity=".23"
+                                    Source="paid.pdf"
+                                    VerticalOptions="End" />
+                                <VerticalStackLayout
+                                    Grid.Column="1"
+                                    Margin="-8,0,0,0"
+                                    HorizontalOptions="Start"
+                                    VerticalOptions="Center">
+
+                                    <Label
+                                        Grid.Row="1"
+                                        Margin="0,-30,0,18"
+                                        FontAttributes="Bold"
+                                        FontFamily="Msbold"
+                                        FontSize="13"
+                                        HorizontalOptions="Start"
+                                        Text="Michael Hamilton"
+                                        TextColor="{StaticResource Primary}"
+                                        VerticalOptions="Start" />
+                                    <Label
+                                        Grid.Row="1"
+                                        FontAttributes="Bold"
+                                        FontFamily="MsBold"
+                                        FontSize="10"
+                                        HorizontalOptions="Start"
+                                        Text="UpKeep Cleaning"
+                                        TextColor="{StaticResource LDarkText}"
+                                        VerticalOptions="Start" />
+                                    <HorizontalStackLayout Margin="0,5,0,10">
+                                        <Image
+                                            Grid.Column="1"
+                                            HorizontalOptions="Start"
+                                            Source="clock.pdf"
+                                            VerticalOptions="End"
+                                            WidthRequest="10" />
+                                        <Label
+                                            Grid.Row="1"
+                                            FontAttributes="Bold"
+                                            FontFamily="Msbold"
+                                            FontSize="9"
+                                            HorizontalOptions="Start"
+                                            Text="  3PM-6PM"
+                                            TextColor="{StaticResource Primary}"
+                                            VerticalOptions="Start" />
+                                    </HorizontalStackLayout>
+                                    <HorizontalStackLayout Margin="0,5,0,0">
+                                        <Label
+                                            Grid.Row="1"
+                                            Margin="0,0,10,0"
+                                            FontAttributes="Bold"
+                                            FontFamily="MsBold"
+                                            FontSize="10"
+                                            HorizontalOptions="Start"
+                                            Text="Client Rating"
+                                            TextColor="{StaticResource LDarkText}"
+                                            VerticalOptions="Start" />
+                                        <Image
+                                            Grid.Column="1"
+                                            Margin="10,0,5,0"
+                                            HorizontalOptions="Start"
+                                            Source="star.pdf"
+                                            VerticalOptions="End"
+                                            WidthRequest="13" />
+                                        <Image
+                                            Grid.Column="1"
+                                            Margin="5,0"
+                                            HorizontalOptions="Start"
+                                            Source="star.pdf"
+                                            VerticalOptions="End"
+                                            WidthRequest="13" />
+                                        <Image
+                                            Grid.Column="1"
+                                            Margin="5,0"
+                                            HorizontalOptions="Start"
+                                            Source="star.pdf"
+                                            VerticalOptions="End"
+                                            WidthRequest="13" />
+                                    </HorizontalStackLayout>
+                                </VerticalStackLayout>
+                            </Grid>
+                        </VerticalStackLayout>
+                    </ScrollView>
+                    <Image
+                        Margin="0,25,0,0"
+                        Source="drop.png"
+                        VerticalOptions="Start" />
+                </Grid>
+            </Grid>
         </Grid>
     </Grid>
 </ContentPage>
