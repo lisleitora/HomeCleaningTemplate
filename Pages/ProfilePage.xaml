@@ -4,8 +4,11 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     Title="ProfilePage">
-    <Grid>
-        <Grid BackgroundColor="{StaticResource Primary}" RowDefinitions="150,*">
+    <Grid BackgroundColor="{StaticResource Primary}">
+        <Grid
+            x:Name="pgProfilePage"
+            BackgroundColor="{StaticResource Primary}"
+            RowDefinitions="150,*">
             <HorizontalStackLayout Grid.Row="0">
                 <Image
                     Margin="20,40,20,0"
@@ -214,12 +217,11 @@
                 IsVisible="false"
                 RowDefinitions="170,*">
                 <Image
-                    x:Name="pgcalendar"
+                    x:Name="pgCalendar"
                     HeightRequest="140"
                     Source="weekcalendar.png" />
                 <Grid x:Name="pgAssignments" Grid.Row="1">
                     <Border
-                        x:Name="pgassignments"
                         Margin="0,25,0,0"
                         BackgroundColor="#FAFAFA"
                         StrokeShape="RoundRectangle 40,40,0,0"
@@ -507,10 +509,7 @@
                                     </HorizontalStackLayout>
                                 </VerticalStackLayout>
                             </Grid>
-                            <Grid
-                                x:Name="pgCalendar"
-                                ColumnDefinitions="100,*"
-                                IsVisible="false">
+                            <Grid ColumnDefinitions="100,*" IsVisible="false">
 
                                 <Label
                                     Grid.Row="1"
