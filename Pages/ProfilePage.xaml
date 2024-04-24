@@ -9,6 +9,7 @@
             x:Name="pgProfilePage"
             BackgroundColor="{StaticResource Primary}"
             RowDefinitions="150,*">
+            
             <HorizontalStackLayout Grid.Row="0">
                 <Image
                     Margin="20,40,20,0"
@@ -47,6 +48,7 @@
                         VerticalTextAlignment="Center" />
                 </VerticalStackLayout>
             </HorizontalStackLayout>
+            
             <Grid Grid.Row="1">
                 <Border
                     Margin="0,25,0,0"
@@ -211,15 +213,20 @@
 
 
 
+            
+        </Grid>
+        
             <Grid
                 x:Name="pgCalendarPage"
                 BackgroundColor="{StaticResource Primary}"
                 IsVisible="false"
                 RowDefinitions="170,*">
+                
                 <Image
                     x:Name="pgCalendar"
                     HeightRequest="140"
                     Source="weekcalendar.png" />
+                
                 <Grid x:Name="pgAssignments" Grid.Row="1">
                     <Border
                         Margin="0,25,0,0"
@@ -649,6 +656,6 @@
                         VerticalOptions="Start" />
                 </Grid>
             </Grid>
-        </Grid>
+        
     </Grid>
 </ContentPage>

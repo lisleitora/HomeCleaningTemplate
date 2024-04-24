@@ -2,6 +2,7 @@ namespace HomeCleaningTemplate.Pages;
 
 public partial class TutorialPage : ContentPage
 {
+    bool isFirst = true;
 	public TutorialPage()
 	{
 		InitializeComponent();
@@ -15,6 +16,11 @@ public partial class TutorialPage : ContentPage
         pgDownThing.TranslationY = pgDownThing.Height;
         pgRightImage.TranslationX = pgRightImage.Width;
         pgRightImage.TranslationY = pgRightImage.Width * -1;
+
+        if (!isFirst)
+        await Helpers.Expand(pgStart, pgBackButton, true);
+
+        isFirst = false;
     }
 
     private void Button_Clicked_1(object sender, EventArgs e)

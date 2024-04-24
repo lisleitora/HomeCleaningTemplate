@@ -11,12 +11,13 @@ public partial class ProfilePage : ContentPage
     {
         base.OnAppearing();
         await Task.Delay(200);
-        pgCalendar.TranslationX = pgCalendar.Width;
-        pgCalendar.TranslationY = pgCalendar.Height * -1;
+        pgCalendar.TranslationX = this.WidthRequest;
+        pgCalendar.TranslationY = pgCalendar.HeightRequest * -1;
+        pgAssignments.TranslationY = this.HeightRequest;
     }
     private async void GoCalendar(object sender, EventArgs e)
     {
-    //    Application.Current.MainPage.Navigation.PushAsync(new CalendarPage());
+        //Application.Current.MainPage.Navigation.PushAsync(new CalendarPage());
     pgCalendarPage.IsVisible = true;
         pgProfilePage.IsVisible = false;
         await Helpers.AppearRight(pgCalendar, true);
